@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #d7d6d6;
+}
+
+h1,
+h2 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffffcd;
+    text-align: center;
+    background-color: rgba(108, 9, 108, 0.731);
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.763);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+input {
+    margin: 10px 0;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s;
+    -webkit-transition: border 0.3s;
+    -moz-transition: border 0.3s;
+    -ms-transition: border 0.3s;
+    -o-transition: border 0.3s;
+}
+
+input:focus {
+    border: 2px solid #007bff;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0614b6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    -webkit-transition: background-color 0.3s, transform 0.2s;
+    -moz-transition: background-color 0.3s, transform 0.2s;
+    -ms-transition: background-color 0.3s, transform 0.2s;
+    -o-transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0d3357f7;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.ul-container {
+    padding: 20px;
+    background-color: transparent;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #eaeaea;
+    margin-bottom: 15px;
+    background-color: #aeaeae;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    box-shadow: 0px 0px 8px rgba(46, 46, 46, 0.454);
+}
+
+ul li {
+    background-color: rgba(216, 216, 216, 0.562);
+    min-height: 70px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.763);
+    border-radius: 8px;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul li:nth-of-type(1) {
+    width: 15%;
+    word-break: break-all;
+}
+
+ul li:nth-of-type(2),
+ul li:nth-of-type(3) {
+    width: 25%;
+    word-break: break-all;
+    text-align: center;
+}
+
+.action {
+    background-color: rgba(227, 226, 226, 0.653);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.763);
+    border-radius: 8px;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.li {
+    color: #333;
+    font-weight: bold;
+}
+
+.btn-container {
+    width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+}
+
+.btn-container button {
+    width: 45%;
+}
+
+.btn-container button:nth-of-type(1) {
+    background-color: rgb(11, 128, 0);
+}
+
+.btn-container button:nth-of-type(2) {
+    background-color: rgb(182, 10, 10);
+}
+
+[type="button"] {
+    margin-top: 10px;
+}
+
+ul:hover {
+    background-color: #eaeaea;
+}
+
+
+/* Responsive  */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    form {
+        width: 70%;
+    }
+    input {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .ul-container {
+        width: 90%;
+    }
+    .btn-container {
+        width: 30%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .btn-container button {
+        width: 90%;
+    }
+    .action {
+        justify-content: center;
+    }
+}
